@@ -1,0 +1,268 @@
+/* Qiao Zhang - 05/04/2026 */
+
+/* Basic page styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #d7c7aa;
+  font-size: 16px;
+  color: #230e06;
+}
+/* wrapper keeps the page centered and not full screen */
+#wrapper {
+  width: 90%;
+  margin: 8px auto;
+}
+
+/* REQUIRED: nav element selector */
+nav {
+  height: 35px;
+  background-color: #cbb99c; /* beige/brown like screenshot */
+  padding: 6px 0 0 12px; /* keeps links at top-left */
+}
+
+/* Home page nav links (red like screenshot) */
+nav a {
+  color: #bb161d;
+  text-decoration: none;
+  font-weight: normal;
+  margin-right: 18px;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin-right: 8px;
+}
+
+/* Specials page nav links (blue like screenshot) */
+nav.blue a {
+  color: #0000ee;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/* Header bar */
+header {
+  background-color: #00602b;
+  color: #ffffff;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 6px 0;
+}
+
+/* REQUIRED: main element selector */
+main {
+  font-weight: bold;
+  background-image: url(background.jpg);
+  background-repeat: repeat-x;
+  padding: 10px;
+}
+
+/* Content blocks */
+p {
+  background-color: #ffffff;
+  margin: 0 0 10px 0;
+  padding: 6px;
+}
+
+h2,
+h3 {
+  color: #000000;
+  margin: 0 0 8px 0;
+}
+
+/* Special sections */
+.special-item {
+  background-color: #ffffff;
+  padding: 10px;
+  margin-bottom: 12px;
+}
+
+/* Highlight line */
+.highlight {
+  display: block;
+  margin: 6px 0 10px 0;
+  font-weight: bold;
+  font-style: italic;
+  color: #ee1e28;
+}
+
+/* Images */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 8px 0 10px 0;
+}
+
+/* Home page footer (thin red bar like screenshot) */
+.footer {
+  background-color: #bb161d;
+  color: #ffffff;
+  text-align: center;
+  padding: 2px 0;
+}
+
+.footer h5 {
+  margin: 0;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: bold;
+}
+
+/* Specials page footer (ONE consistent brown color) */
+.footer-specials {
+  background-color: #cbb99c; /* same brown as nav (ONE color) */
+  color: #8a6b4f;
+  text-align: left;
+  padding: 10px 12px;
+}
+
+.footer-specials h5 {
+  margin: 0;
+  font-size: 12px;
+  font-weight: normal;
+}
+/* Responsive layout for larger screens */
+@media (min-width: 768px) {
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  main p,
+  main section,
+  main img,
+  .highlight {
+    flex: 1 1 45%;
+  }
+}
+.home-photo {
+  width: 30%;
+  height: auto;
+}
+
+.highlight {
+  width: 100%;
+  display: block;
+}
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    background-color: #f2f2f2;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #000;
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+header {
+    text-align: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+header img {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 28px;
+    color: #333;
+}
+
+.form-group {
+    display: grid;
+    gap: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #444;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    min-height: 80px;
+}
+
+.contact-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: #ffffff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+    opacity: 0.9;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #ccc;
+    color: #666;
+}
+
+/* Valid fields after user interaction */
+input:user-valid,
+select:user-valid {
+    border-color: #04AA6D;
+    background-color: #e6fff2;
+}
+
+input[type=text]:focus,
+input[type=date]:focus,
+select:focus {
+    background-color: #ffffcc;
+}
